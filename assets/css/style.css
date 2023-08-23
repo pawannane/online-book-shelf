@@ -1,0 +1,453 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@charset "utf-8";
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.7em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+
+/*for all*/
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1360px;
+  width: 86%;
+  margin: 0 auto;
+}
+/*=================================
+  Header styling starts here
+=================================*/
+header {
+  background: url("https://dummyimage.com/1080x475/453f45/83859e");
+  background-size: cover;
+  color: #ebe9e7;
+}
+
+.logo > a {
+  margin-top: 68px;
+  color: #ebe9e7;
+  font-size: 40px;
+  text-shadow: 0 4px #2f2f2f;
+  text-transform: uppercase;
+}
+
+.header-para {
+  margin-top: 30px;
+  color: #ebe9e7;
+  font-size: 20px;
+  text-shadow: 0 4px #2f2f2f;
+}
+
+.header-nav {
+  margin-top: 230px;
+  padding: 30px 0;
+  background-color: #15151d;
+}
+
+.header-nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-nav-links a {
+  color: #ebe9e7;
+  font-size: 18px;
+}
+
+.header-nav-links a:hover {
+  color: #5f7ea4;
+}
+/*=================================
+  Header styling ends here
+=================================*/
+
+/*=================================
+  main styling starts here
+=================================*/
+
+/*=================================
+  bookstore section styling starts here
+=================================*/
+.bookstore-section {
+  padding-top: 84px;
+  background-color: #ebebeb;
+}
+
+.main-heading {
+  color: #616564;
+  font-size: 24px;
+}
+
+.bookstore-para {
+  margin-top: 38px;
+  color: #3b3c4f;
+  line-height: 20px;
+  word-spacing: 5px;
+}
+
+.img-container {
+  margin: 64px 0 86px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.75% 1fr 1.75% 1fr 1.75% 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 1.75%;
+     -moz-column-gap: 1.75%;
+          column-gap: 1.75%;
+  row-gap: 52px;
+}
+
+.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+
+.image-caption {
+  color: #15151d;
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.75%;
+}
+
+.slider-btn {
+  padding: 16px 17px;
+  background-color: #dadada;
+  color: #616164;
+}
+
+.active-btn {
+  background-color: #065d8d;
+  color: #ebe9e7;
+}
+/*=================================
+  bookstore section styling ends here
+=================================*/
+
+/*=================================
+  help section styling starts here
+=================================*/
+.help-section {
+  padding: 68px 0;
+  background-color: #ebebeb;
+}
+
+.img-help-container {
+  padding: 58px 9% 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5%;
+  background-color: #065d8d;
+  color: #ebe9e7;
+}
+
+.img-help-container .main-heading {
+  color: #ebe9e7;
+}
+
+.help-para {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 20px;
+  word-spacing: 5px;
+}
+
+.live-chat-btn {
+  margin-top: 30px;
+  padding: 16px 24px;
+  border: 1px solid #ebebeb;
+  color: #ebe9e7;
+}
+.live-chat-btn:hover {
+  color: #5f7ea4;
+}
+/*=================================
+  help section styling ends here
+=================================*/
+
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/
+footer {
+  background-color: #2f2f2f;
+  color: #ebe9e7;
+}
+
+.footer-para {
+  padding: 22px 0;
+  text-align: center;
+}
+
+/*=================================
+  footer styling ends here
+=================================*/
+
+/*media query starts*/
+/*media query for 768 starts here*/
+@media only screen and (max-width: 768px) {
+  .img-container {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*media query for 560 starts here*/
+@media only screen and (max-width: 560px) {
+  .img-container {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*media query for 480px starts here*/
+@media only screen and (max-width: 480px) {
+  .header-nav-links a {
+    font-size: 14px;
+  }
+
+  .main-heading {
+    font-size: 22px;
+  }
+
+  .img-container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .help-para {
+    font-size: 16px;
+  }
+}
+
+/*media query for 375px starts here*/
+@media only screen and (max-width: 375px) {
+  .header-nav-links a {
+    font-size: 12px;
+  }
+
+  .bookstore-para,
+  .help-para,
+  .footer-para {
+    font-size: 14px;
+  }
+}
